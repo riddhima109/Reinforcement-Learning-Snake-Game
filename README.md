@@ -114,7 +114,7 @@ Training metrics include the average reward per episode, Q-value estimates, and 
 
 The agent's gameplay can be visualized to observe the learned strategy. This includes how the agent navigates the grid, avoids collisions, and targets apples. Visualization helps in understanding the agent's behavior and identifying areas for improvement.
 
-## **Installation **
+## Installation
 
 ### **Prerequisites**
 
