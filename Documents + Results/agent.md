@@ -61,13 +61,3 @@ The code implements a reinforcement learning agent to play a Snake game using a 
 
 3. **Completion**:
    - The script will continuously train the agent until stopped, improving the agent’s performance over time.
-
-### **Key Points:**
-
-- **`Agent` Class**: Central to the Q-learning algorithm, interacting with the game environment and the neural network.
-- **`SnakeGameAI` Class**: Manages the game logic and state.
-- **Neural Network (`Linear_QNet`)**: Approximates the Q-values for different actions.
-- **`QTrainer`**: Handles the training of the neural network using Q-learning.
-- **Plotting**: Visualizes the agent’s performance for analysis and debugging.
-
-This structure ensures that the agent learns to play the Snake game effectively by balancing exploration and exploitation while continually improving its performance through training and experience replay.
