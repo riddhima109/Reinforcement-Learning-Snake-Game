@@ -125,7 +125,7 @@ Ensure you have the following dependencies installed:
 - Matplotlib
 - Gym (for environment simulation)
 
-### **Installation**
+### Installation
 
 Clone the repository and install the required dependencies:
 
