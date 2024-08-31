@@ -1,30 +1,25 @@
 # Reinforcement-Learning-Snake-Game
 
-
-
 This project showcases the implementation of a classic Snake Game using Reinforcement Learning (RL). The aim is to train an intelligent agent that learns to play Snake autonomously using RL techniques, specifically Deep Q-Learning (DQN). The project highlights how RL can be applied to game environments, transforming them into learning platforms where agents develop strategies through interaction and feedback.
 
-The project demonstrates how RL can be used to make the agent learn optimal policies, such as how to navigate the grid, avoid collisions, and maximize the score by eating as many apples as possible.
+The project demonstrates how RL can be used to make the agent learn optimal policies, such as how to navigate the grid, avoid collisions, and maximize the score by eating as many food items as possible.
 
 ## **Project Structure**
 
 The repository is organized as follows:
 
-- **`/src`**: Contains the source code for the game and RL algorithms.
-  - **`game.py`**: Implements the Snake game logic.
+  - **`snake_game.py`**: Implements the Snake game logic that is playd by human.
+  - **`snake_gameai.py`**: Implements the Snake game logic that is playd by AI agent.
   - **`agent.py`**: Contains the RL agent code, including the DQN algorithm.
+  - **'arial.ttf'**: Contains the font
+  - **'helper.py'**: Contains a function to plot and update the training scores and their moving average in real-time, useful for visualizing the progress of a reinforcement learning model.
   - **`model.py`**: Defines the neural network architecture for the Q-function.
-  - **`train.py`**: Handles the training loop, including experience replay and epsilon decay.
-  - **`utils.py`**: Utility functions for the project.
-- **`/data`**: Directory for storing training data, models, and logs.
-- **`/notebooks`**: Jupyter notebooks for exploratory data analysis (EDA) and experimentation.
-- **`README.md`**: Project documentation.
-- **`requirements.txt`**: List of dependencies required to run the project.
-- **`LICENSE`**: Licensing information.
+  - **`README.md`**: Project documentation.
+  - **`requirements.txt`**: List of dependencies required to run the project.
 
 ## **Reinforcement Learning Overview**
 
-Reinforcement Learning (RL) is a machine learning paradigm where an agent learns to make decisions by interacting with an environment. The agent receives feedback from its actions in the form of rewards, which guide its learning process. The goal is to learn a policy that maximizes cumulative rewards over time.
+Reinforcement Learning (RL) is a feedback-based machine learning paradigm where an agent learns to make decisions by interacting with an environment. The agent receives feedback from its actions in the form of rewards, which guide its learning process. The goal is to learn a policy that maximizes cumulative rewards over time.
 
 ### **Q-Learning**
 
@@ -54,7 +49,7 @@ The DQN algorithm introduces two key innovations:
 
 ### **Environment Setup**
 
-The Snake Game environment is a grid where the snake moves to eat apples and grows in length. The game ends if the snake collides with itself or the walls. The environment is fully observable, with the entire grid and snake's state accessible to the agent.
+The Snake Game environment is a grid where the snake moves to eat food and grows in length. The game ends if the snake collides with itself or the walls. The environment is fully observable, with the entire grid and snake's state accessible to the agent.
 
 ### **State Representation**
 
@@ -121,7 +116,7 @@ Training metrics include the average reward per episode, Q-value estimates, and 
 
 The agent's gameplay can be visualized to observe the learned strategy. This includes how the agent navigates the grid, avoids collisions, and targets apples. Visualization helps in understanding the agent's behavior and identifying areas for improvement.
 
-## **Installation and Usage**
+## **Installation **
 
 ### **Prerequisites**
 
@@ -142,31 +137,4 @@ cd Reinforcement-Learning-Snake-Game
 pip install -r requirements.txt
 ```
 
-### **Running the Game**
-
-You can run the Snake game manually to familiarize yourself with the environment:
-
-```bash
-python src/game.py
-```
-
-### **Training the Model**
-
-To train the RL agent, run the training script:
-
-```bash
-python src/train.py
-```
-
-Training logs and model checkpoints will be saved in the `/data` directory.
-
-### **Evaluating the Model**
-
-After training, evaluate the agent's performance by running:
-
-```bash
-python src/evaluate.py
-```
-
-This will load the trained model and run episodes to assess its
 
