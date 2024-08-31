@@ -1,4 +1,4 @@
-The `plot` function in your code is designed to visualize the performance of your reinforcement learning agent during training. Here’s a detailed explanation of its components and how it works:
+The `plot` function in code is designed to visualize the performance of your reinforcement learning agent during training. Here’s a detailed explanation of its components and how it works:
 
 ### Components and Functionality
 
