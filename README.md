@@ -25,17 +25,15 @@ Reinforcement Learning (RL) is a feedback-based machine learning paradigm where 
 
 Q-Learning is a value-based RL algorithm where the agent learns a Q-function, which estimates the expected cumulative reward for taking a given action in a given state. The Q-function is updated iteratively using the Bellman equation:
 
-\[
-Q(s, a) \leftarrow Q(s, a) + \alpha \left( r + \gamma \max_a Q(s', a') - Q(s, a) \right)
-\]
+![image](https://github.com/user-attachments/assets/3223e05f-e0ce-4cd9-b21d-77aba0f020f9)
 
 Where:
-- \( s \) is the current state.
-- \( a \) is the current action.
-- \( r \) is the reward received after taking action \( a \).
-- \( s' \) is the next state.
-- \( \alpha \) is the learning rate.
-- \( \gamma \) is the discount factor.
+- ( s ) is the current state.
+- ( a ) is the current action.
+- ( r ) is the reward received after taking action \( a \).
+- ( s') is the next state.
+- ( alpha ) is the learning rate.
+- ( gamma ) is the discount factor.
 
 ### **Deep Q-Learning (DQN)**
 
@@ -68,8 +66,8 @@ The agent selects an action based on the current state to maximize the expected 
 ### **Reward Function**
 
 The reward function is critical to guiding the agent's learning. The rewards are defined as:
-- **+10**: For eating an apple.
-- **-1**: For colliding with a wall or the snake's body.
+- **+10**: For eating food.
+- **-10**: For colliding with a wall or the snake's body.
 - **0**: For all other actions.
 
 The sparse nature of the rewards encourages the agent to learn long-term strategies for survival and maximizing the score.
@@ -79,9 +77,9 @@ The sparse nature of the rewards encourages the agent to learn long-term strateg
 ### **Hyperparameters**
 
 Key hyperparameters for the DQN model include:
-- **Learning Rate (\( \alpha \))**: Controls the step size in updating Q-values.
-- **Discount Factor (\( \gamma \))**: Determines the importance of future rewards.
-- **Epsilon (\( \epsilon \))**: Governs the exploration-exploitation trade-off.
+- **Learning Rate (( alpha ))**: Controls the step size in updating Q-values.
+- **Discount Factor (( gamma ))**: Determines the importance of future rewards.
+- **Epsilon (( epsilon ))**: Governs the exploration-exploitation trade-off.
 - **Batch Size**: Number of experiences sampled from the replay buffer per update.
 - **Replay Buffer Size**: The capacity of the experience replay buffer.
 - **Target Network Update Frequency**: How often the target network is updated.
