@@ -8,8 +8,8 @@ The project demonstrates how RL can be used to make the agent learn optimal poli
 
 The repository is organized as follows:
 
-  - **`snake_game.py`**: Implements the Snake game logic that is playd by human.
-  - **`snake_gameai.py`**: Implements the Snake game logic that is playd by AI agent.
+  - **`snake_game.py`**: Implements the Snake game logic that is played by human.
+  - **`snake_gameai.py`**: Implements the Snake game logic that is played by AI agent.
   - **`agent.py`**: Contains the RL agent code, including the DQN algorithm.
   - **`arial.ttf`**: Contains the font
   - **`helper.py`**: Contains a function to plot and update the training scores and their moving average in real-time, useful for visualizing the progress of a reinforcement learning model.
